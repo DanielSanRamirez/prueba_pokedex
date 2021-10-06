@@ -24,9 +24,11 @@ function App() {
     <div>
       <Nav />
 
-      <ListDataI setPrev={setPrev} url={url} setNext={setNext} setIdPokemon={setIdPokemon} />
+      <div className='grid'>
+        <ListDataI setPrev={setPrev} url={url} setNext={setNext} setIdPokemon={setIdPokemon} />
 
-      <InformationPokemonI idPokemon={idPokemon} />
+        <InformationPokemonI idPokemon={idPokemon} />
+      </div>
 
       <Footer prev={prev} handleChangeButtonNext={handleChangeButtonNext} handleChangeButtonBack={handleChangeButtonBack} />
     </div>

@@ -1,6 +1,7 @@
 import React, { useEffect, useState } from 'react'
 import { changeText } from '../../helper/changeText'
 import { getP } from '../../helper/getP'
+import './list-data.css'
 
 export const ListData = (props) => {
 
@@ -29,8 +30,8 @@ export const ListData = (props) => {
             <div onClick={(e) => {handleCheckInformation(e, id)}}>
                 {
                     id === undefined ? 'Cargando...' :
-                        <div>
-                            <img src={`${urlImage}${id}.png`} alt='Imagen Pokemon' />
+                        <div className='card'>
+                            <img src={`${urlImage}${id}.png`} alt='Imagen Pokemon' className='image' />
                             <h3># {id}</h3>
                             <h3>{nameM}</h3>
                         </div>

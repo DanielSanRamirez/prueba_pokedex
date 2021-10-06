@@ -34,17 +34,20 @@ export const ListDataI = (props) => {
             {
                 data === undefined ?
                     'Cargando...' :
-                    
-                    data.results.map((data, index) =>
-                        <ListData
-                            key={index}
-                            urlImage={urlImage}
-                            name={data.name}
-                            url={data.url}
-                            handleCheckInformation={handleCheckInformation}
-                        />
-                    )
-                    
+                    <div>
+                        {
+                            data.results.map((data, index) =>
+                                <ListData
+                                    key={index}
+                                    urlImage={urlImage}
+                                    name={data.name}
+                                    url={data.url}
+                                    handleCheckInformation={handleCheckInformation}
+                                />
+
+                            )
+                        }
+                    </div>
             }
         </div>
     )
