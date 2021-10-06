@@ -12,7 +12,7 @@ export const ListData = (props) => {
 
 
     const {
-        name, urlImage, url
+        name, urlImage, url, handleCheckInformation
     } = props
 
 
@@ -26,7 +26,7 @@ export const ListData = (props) => {
     return (
         <div>
 
-            <div>
+            <div onClick={(e) => {handleCheckInformation(e, id)}}>
                 {
                     id === undefined ? 'Cargando...' :
                         <div>

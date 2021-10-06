@@ -6,7 +6,7 @@ import { ListData } from './list-data'
 export const ListDataI = (props) => {
 
     const {
-        setPrev, url, setNext
+        setPrev, url, setNext, setIdPokemon
     } = props
 
     const [data, setData] = useState()
@@ -20,6 +20,10 @@ export const ListDataI = (props) => {
         setData(dataO)
         setPrev(dataO.previous)
         setNext(dataO.next)
+    }
+
+    const handleCheckInformation = (e, id) => {
+        setIdPokemon(id)
     }
 
     const urlImage = `https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/other/official-artwork/`
@@ -37,8 +41,10 @@ export const ListDataI = (props) => {
                             urlImage={urlImage}
                             name={data.name}
                             url={data.url}
+                            handleCheckInformation={handleCheckInformation}
                         />
                     )
+                    
             }
         </div>
     )
