@@ -8,7 +8,7 @@ export const ListData = (props) => {
 
     useEffect(() => {
         fetchEachPokemon()
-    }, [])
+    })
 
 
     const {
