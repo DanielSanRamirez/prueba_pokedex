@@ -15,7 +15,7 @@ export const InformationPokemon = (props) => {
                     <div>
                         <img src={`${urlImage}${idPokemon}.png`} alt='' />
                         <h3># {idPokemon}</h3>
-                        <h3>{namePokemon}</h3>
+                        <h3 id="namePokemon">{namePokemon}</h3>
                         <h3>Types</h3>
                         <p>{typesPokemon[0].map(t => t + ' ')} </p>
                         <h3>Peso</h3>

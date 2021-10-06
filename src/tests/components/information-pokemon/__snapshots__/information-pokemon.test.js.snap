@@ -1,0 +1,36 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`Test in component <InformationPokemon /> should be a napshots 1`] = `
+<div>
+  <div>
+    <img
+      alt=""
+      src="https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/other/official-artwork/1.png"
+    />
+    <h3>
+      # 
+      1
+    </h3>
+    <h3
+      id="namePokemon"
+    >
+      bulbasaur
+    </h3>
+    <h3>
+      Types
+    </h3>
+    <p>
+      grass 
+      poison 
+       
+    </p>
+    <h3>
+      Peso
+    </h3>
+    <p>
+      69
+       kg
+    </p>
+  </div>
+</div>
+`;
